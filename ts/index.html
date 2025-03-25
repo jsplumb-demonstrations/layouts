@@ -37,39 +37,25 @@
         </div>
 
         <div class="jtk-demo-rhs">
-            <div class="jtk-demo-sidebar">
+            <div class="jtk-demo-sidebar" id="layout-picker">
                 <label style="white-space: nowrap;">Layout:
                     <select id="layout">
-                        <option value="Hierarchical" selected>Hierarchical</option>
-                        <option value="Hierarchical" extra="Compressed">Hierarchical - compressed</option>
-                        <option value="Hierarchical" extra="AlignStart">Hierarchical - align start</option>
-                        <option value="Hierarchical" extra="AlignEnd">Hierarchical - align end</option>
-
-                        <option value="Hierarchical" extra="Vertical">Hierarchical - vertical</option>
-                        <option value="Hierarchical" extra="VerticalAlignStart">Hierarchical - vertical, align start</option>
-                        <option value="Hierarchical" extra="VerticalAlignEnd">Hierarchical - vertical, align end</option>
-
-                        <option value="Hierarchical" extra="Inverted">Hierarchical - inverted</option>
-                        <option value="Hierarchical" extra="InvertedAlignStart">Hierarchical - inverted, align start</option>
-                        <option value="Hierarchical" extra="InvertedAlignEnd">Hierarchical - inverted, align end</option>
-
-                        <option value="Hierarchical" extra="VerticalInverted">Hierarchical - vertical, inverted</option>
-                        <option value="Hierarchical" extra="VerticalInvertedAlignStart">Hierarchical - vertical, inverted, align start</option>
-                        <option value="Hierarchical" extra="VerticalInvertedAlignEnd">Hierarchical - vertical, inverted, align end</option>
-
-                        <option value="ForceDirected">ForceDirected</option>
-                        <option value="Circular">Circular</option>
-                        <option value="Circular" extra="CenteredRoot">Circular (root at center)</option>
-                        <option value="Balloon">Balloon</option>
-                        <option value="Absolute">Absolute</option>
+                        <!-- filled by js -->
                     </select>
                 </label>
+
+                <label style="white-space: nowrap;">Options:
+                    <select id="layout-options">
+                        <!-- filled by js -->
+                    </select>
+                </label>
+
+
+
                 <div class="config">
                 <pre>
 {
-  type: "Hierarchical",
-  orientation: "horizontal",
-    padding: [100, 60]
+  type: "Hierarchy"
 }
             </pre>
                 </div>

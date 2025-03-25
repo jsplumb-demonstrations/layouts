@@ -1,7 +1,17 @@
-#layout {
-    margin-bottom:25px;
-    height:35px;
-    outline:none;
+body {
+    font-family:sans-serif;
+}
+
+#layout-picker label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom:1rem;
+}
+
+#layout-picker label select {
+    margin-left:1rem;
+    width:150px;
 }
 
 
@@ -10,28 +20,32 @@
 }
 
 .config {
-
+    width:100%;
     opacity: 0.8;
     z-index: 500;
-    border-top-right-radius: 4px;
-    display: flex;
-    flex-direction: column;
     color: black;
+    background-color: whitesmoke;
 }
 
 
 .jtk-node {
-    z-index:50;
-    border:1px solid #ccc;
-    background-color:white;
-    display:flex;
+    z-index: 50;
+    background-color: #2292d4;
+    color:white;
+    font-weight:bold;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius:3px;
+    border-radius: 3px;
+    font-size: 12px;
 }
 
 .jtk-node .add, .jtk-node .delete {
-    position:absolute;
-    top:3px;
+    position: absolute;
+    top: 3px;
+}
+
+.jtk-connector path {
+    stroke:#2292d4;
 }
 
