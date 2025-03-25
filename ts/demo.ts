@@ -152,7 +152,7 @@ ready(function () {
         renderer.setLayout(lp)
         renderer.zoomToFit()
 
-        document.querySelector(".config pre").innerHTML = JSON.stringify(lp, 2, 2)
+        document.querySelector(".config pre").innerHTML = (JSON as any).stringify(lp, 2, 2)
         return {id, extra}
     }
 
