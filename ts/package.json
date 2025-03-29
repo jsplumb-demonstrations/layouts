@@ -1,6 +1,6 @@
 {
     "name": "layouts",
-    "version": "6.90.0",
+    "version": "7.0.0",
     "scripts": {
         "build-es6": "./node_modules/.bin/esbuild demo.ts --target=es2016 --bundle --format=iife --outfile=bundle.js",
         "build-es6-min": "./node_modules/.bin/esbuild demo.ts --target=es2016 --bundle --minify --format=iife --outfile=bundle-min.js",
@@ -22,11 +22,13 @@
     },
     "homepage": "https://github.com/jsplumb-demonstrations/kanban#readme",
     "devDependencies": {
-        "@jsplumbtoolkit/browser-ui": "^6.90.0",
         "jsplumbtoolkit-demo-support": "^1.0.0",
         "babel-cli": "^6.26.0",
         "babel-preset-env": "^1.7.0",
         "esbuild": "0.17.18",
         "http-server": "14.1.1"
+    },
+    "dependencies": {
+        "@jsplumbtoolkit/browser-ui": "^7.0.0"
     }
 }
